@@ -1,0 +1,50 @@
+
+int soma(int a, int b) {
+    int resultado = a + b;
+    return resultado;
+}
+
+void mostrar(string mensagem) {
+    write(mensagem);
+}
+
+int main() {
+    int x = 10;
+    int y = 20;
+    int v=0;
+    int total;
+    float media = 15.5;
+    string texto = "Ola, mundo!";
+    int vetor[] = [1, 2, 3];
+
+    total = soma(x, y);
+    media = (x + y) / 2;
+
+    if (total >= 30) {
+        write(total);
+    } elif (total == 29) {
+        write("Quase chegou");
+    } else {
+        write("Valor menor");
+    }
+
+    read(x);
+    write(texto, media);
+
+    while (x > 0) {
+        x = x - 1;
+    }
+
+    loop {
+        y = y - 1;
+        if (y <= 0) {
+            break;
+        }
+    }
+
+    for (item in vetor) {
+        write(item);
+    }
+
+    return 0;
+}
